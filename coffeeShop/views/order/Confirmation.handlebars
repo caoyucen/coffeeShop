@@ -1,0 +1,26 @@
+<h1>Thanks For Your Order </h1>
+<h3>Customer:       {{userName}} </h3>
+<h3>User ID:        {{userID}}  </h3>
+<br>
+<br>
+
+<section id='confirmationDate'>
+    <h1>You have the following orders need to pick up, please wait for the text  </h1>
+    <table>
+        <thead>
+        <th>Order Number</th>
+        <th>Total price</th>
+        <th>Order Time</th>
+
+        </thead>
+        <tbody>
+        {{#each order}}
+            <tr>
+                <td> {{orderID}} </td>
+                <th> {{totalPrice}}</th>
+                <td> {{orderTime}} </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</section>

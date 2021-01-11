@@ -1,0 +1,121 @@
+#CoffeeShop_banner .jumbotron{
+    height: 70vh;
+    background-image: url(/img/bg1.jpg);
+    background-size:cover;
+}
+
+#CoffeeShop_banner .shopInfo{
+    margin-top: 30px;
+
+    background-size:cover;
+}
+
+#CoffeeShop_banner .jumbotron h1{
+    color: white;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#CoffeeShop_banner .jumbotron p{
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+img{
+    max-width: 100%;
+}
+
+.btn{
+    background: #f05f5c;
+    color: white;
+    padding: 9px 26px;
+    border-radius: 20px;
+}
+
+#CoffeeShop_banner .container{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+#coffee{
+    padding: 80px 0px;
+    background: rgb(248, 248, 248);
+}
+
+
+
+#content_footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+}
+
+#coffeeMenu h3{
+    margin-bottom: 50px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+#coffeeMenu .coffeeInfo h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#coffeeMenu .coffeeInfo h5{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#coffeeMenu .coffeeImg{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+#coffeeMenu h4{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+#coffeeMenu .btn{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+
+#coffeeMenu .container{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+
+#myInput {
+    background-image: url('https://static.runoob.com/images/mix/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 15px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#additem th {
+  text-align: center;
+}
+
+#confirmationDate th{
+  border: 1px solid black;
+}
+
+#confirmationDate td{
+  border: 1px solid black;
+}

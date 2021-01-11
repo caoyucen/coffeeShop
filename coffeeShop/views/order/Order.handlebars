@@ -1,0 +1,35 @@
+<h1>Hi {{userName}}, your userID is {{userID}}, Here's the menu! </h1>
+<br>
+<br>
+
+<h3>Current items:</h3>
+
+<form id="additem" action="/order/Order" method="post">
+    <table>
+        <thead>
+        <th>ItemID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Total number</th>
+        </thead>
+        <tbody>
+        {{#each item}}
+            <tr>
+                <td id="itemID">{{itemID}} </td>
+                <td>{{name}}</td>
+                <td>{{unitPrice}}</td>
+                <td>
+                    <input type="number" oninput="checkNum(this.value)" min="0" name="number" value=0>
+                </td>
+                <td>
+                    <input type="hidden" name="itemID" value={{itemID}} />
+                </td>
+                <td>
+                    <input type="hidden" name="unitPrice" value={{unitPrice}} />
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+    <input type="submit" value="Submit order">
+</form>

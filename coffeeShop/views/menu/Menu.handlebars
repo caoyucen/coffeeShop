@@ -1,0 +1,50 @@
+
+<input type="text" id="myInput" onchange="searchFunction()" placeholder="Search...">
+
+<section id="coffeeMenu">
+    {{#each item}}
+        <div class="container">
+            <div class="row" id = {{name}}>
+                <div class="col-md-4">
+                    <div class="upper">
+                        <img src = {{picURL}}>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="coffeeInfo">
+                        <h2> {{name}} </h2>
+                        <h2> Calorie: {{calorie}} </h2>
+                        <h5> {{description}} </h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="lower">
+                        <h4> Price: ${{unitPrice}} </h4>
+                        <center><a class='btn' href="/order/Order">Order</a></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</section>
+
+<script>
+    function searchFunction(){
+        var input = document.getElementById('myInput');
+        var filter = input.value.toUpperCase();
+        var div = document.getElementsByClassName('row')
+        var i;
+        console.log("div: " + div);
+        console.log("div[0]: " + div[0]);
+        console.log("div.length: " + div.length);
+        console.log("filter: " + filter);
+        for(i = 0; i < div.length; i++){
+        console.log("name: " + div[i].id);
+            if (div[i].id.toUpperCase().indexOf(filter) > -1) {
+                div[i].style.display = "";
+            } else {
+                div[i].style.display = "none";
+            }
+        }
+    }
+</script>
